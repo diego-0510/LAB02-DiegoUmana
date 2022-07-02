@@ -35,7 +35,7 @@ namespace LABOR_2
                 string nombre = txtNombre.Text;
                 int edad = int.Parse(txtEdad.Text);
                 string cargo = txtCargo.Text;
-                int acciones = 0;
+                int acciones = int.Parse(txtAcciones.Text);
                 nuevoDueno.crearDueno(cedula, nombre, edad,cargo,acciones);
                 limpiarCampos();
                 MessageBox.Show("Información Ingresada Correctamente", "Ingresada",

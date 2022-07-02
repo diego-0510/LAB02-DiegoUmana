@@ -32,6 +32,7 @@ namespace LABOR_2
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarDueñoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
@@ -48,7 +49,7 @@ namespace LABOR_2
             this.btnIngresar = new System.Windows.Forms.Button();
             this.lblCedula = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
-            this.registrarDueñoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprarAccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,8 @@ namespace LABOR_2
             // 
             this.buscarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buscarToolStripMenuItem1,
-            this.registrarDueñoToolStripMenuItem});
+            this.registrarDueñoToolStripMenuItem,
+            this.comprarAccionesToolStripMenuItem});
             this.buscarToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.buscarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
@@ -80,6 +82,13 @@ namespace LABOR_2
             this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
             this.buscarToolStripMenuItem1.Text = "Pago de Salario Mensual";
             this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
+            // 
+            // registrarDueñoToolStripMenuItem
+            // 
+            this.registrarDueñoToolStripMenuItem.Name = "registrarDueñoToolStripMenuItem";
+            this.registrarDueñoToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.registrarDueñoToolStripMenuItem.Text = "Registrar Dueño";
+            this.registrarDueñoToolStripMenuItem.Click += new System.EventHandler(this.registrarDueñoToolStripMenuItem_Click);
             // 
             // lblTitulo
             // 
@@ -226,12 +235,12 @@ namespace LABOR_2
             this.txtCedula.Size = new System.Drawing.Size(100, 20);
             this.txtCedula.TabIndex = 37;
             // 
-            // registrarDueñoToolStripMenuItem
+            // comprarAccionesToolStripMenuItem
             // 
-            this.registrarDueñoToolStripMenuItem.Name = "registrarDueñoToolStripMenuItem";
-            this.registrarDueñoToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.registrarDueñoToolStripMenuItem.Text = "Registrar Dueño";
-            this.registrarDueñoToolStripMenuItem.Click += new System.EventHandler(this.registrarDueñoToolStripMenuItem_Click);
+            this.comprarAccionesToolStripMenuItem.Name = "comprarAccionesToolStripMenuItem";
+            this.comprarAccionesToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.comprarAccionesToolStripMenuItem.Text = "Comprar Acciones";
+            this.comprarAccionesToolStripMenuItem.Click += new System.EventHandler(this.comprarAccionesToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -286,6 +295,7 @@ namespace LABOR_2
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.ToolStripMenuItem registrarDueñoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comprarAccionesToolStripMenuItem;
     }
 }
 

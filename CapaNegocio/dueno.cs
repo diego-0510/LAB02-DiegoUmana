@@ -17,5 +17,26 @@ namespace CapaNegocio
             objDueno dueno = new objDueno(cedula, nombre, edad, cargo,acciones);
             listDueno.Add(dueno);
         }
+
+        public dynamic[] buscarDueno(int cedula)
+        {
+            objDueno duenoBuscado = new objDueno();
+            dynamic[] listaEncontrado = new dynamic[4];
+
+            foreach (objDueno buscandoDueno in listDueno)
+            {
+                if (buscandoDueno.cedula == cedula)
+                {
+                    duenoBuscado = buscandoDueno;
+                    listaEncontrado[0] = buscandoDueno.nombre;
+                    listaEncontrado[1] = buscandoDueno.edad.ToString();
+                    listaEncontrado[2] = buscandoDueno.cargo;
+                    listaEncontrado[3] = buscandoDueno.acciones.ToString();
+
+                }
+            }
+            return listaEncontrado;
+
+        }
     }
 }

@@ -72,5 +72,11 @@ namespace LABOR_2
             frmDueno ventanaDueno = new frmDueno();
             ventanaDueno.Visible = true;
         }
+
+        private void comprarAccionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCompraAcciones ventaAcciones = new frmCompraAcciones();
+            ventaAcciones.Visible = true;
+        }
     }
 }

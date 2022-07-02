@@ -39,6 +39,8 @@ namespace LABOR_2
             this.lblCedula = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
+            this.lblAcciones = new System.Windows.Forms.Label();
+            this.txtAcciones = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblCargo
@@ -121,7 +123,7 @@ namespace LABOR_2
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(172, 345);
+            this.btnIngresar.Location = new System.Drawing.Point(162, 364);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
             this.btnIngresar.TabIndex = 57;
@@ -129,12 +131,31 @@ namespace LABOR_2
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
+            // lblAcciones
+            // 
+            this.lblAcciones.AutoSize = true;
+            this.lblAcciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAcciones.Location = new System.Drawing.Point(106, 322);
+            this.lblAcciones.Name = "lblAcciones";
+            this.lblAcciones.Size = new System.Drawing.Size(64, 16);
+            this.lblAcciones.TabIndex = 59;
+            this.lblAcciones.Text = "Acciones";
+            // 
+            // txtAcciones
+            // 
+            this.txtAcciones.Location = new System.Drawing.Point(257, 318);
+            this.txtAcciones.Name = "txtAcciones";
+            this.txtAcciones.Size = new System.Drawing.Size(100, 20);
+            this.txtAcciones.TabIndex = 58;
+            // 
             // frmDueno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(427, 417);
+            this.Controls.Add(this.lblAcciones);
+            this.Controls.Add(this.txtAcciones);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.lblCedula);
             this.Controls.Add(this.txtCedula);
@@ -164,5 +185,7 @@ namespace LABOR_2
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Label lblAcciones;
+        private System.Windows.Forms.TextBox txtAcciones;
     }
 }
