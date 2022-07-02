@@ -8,6 +8,7 @@ namespace CapaDatos
 {
     public class objTrabajadores
     {
+        private int cedula { get; set; }
         private string nombre { get; set; }
         private int edad { get; set; }
         private string residencia { get; set; }
@@ -15,8 +16,9 @@ namespace CapaDatos
         private int horasTrabajadas { get; set; }
         private string jornada { get; set; } 
 
-        private objTrabajadores(string nombre,int edad, string residencia,string cargo,int horasTrabajadas,string jornada)
+        public objTrabajadores(int cedula,string nombre,int edad, string residencia,string cargo,int horasTrabajadas,string jornada)
         {
+            this.cedula = cedula;
             this.nombre = nombre;
             this.edad = edad;
             this.residencia = residencia;

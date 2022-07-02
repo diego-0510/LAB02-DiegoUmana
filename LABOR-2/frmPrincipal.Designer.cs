@@ -33,19 +33,21 @@ namespace LABOR_2
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtResidencia = new System.Windows.Forms.TextBox();
             this.lblEdad = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCargo = new System.Windows.Forms.TextBox();
             this.lblResidencia = new System.Windows.Forms.Label();
             this.lblCargo = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtHorasTrabajadas = new System.Windows.Forms.TextBox();
             this.lblHorasTrabajadas = new System.Windows.Forms.Label();
             this.cmbJornada = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.txtCedula = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,32 +75,33 @@ namespace LABOR_2
             // buscarToolStripMenuItem1
             // 
             this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(151, 22);
-            this.buscarToolStripMenuItem1.Text = "Buscar y Editar";
+            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.buscarToolStripMenuItem1.Text = "Pago de Salario Mensual";
+            this.buscarToolStripMenuItem1.Click += new System.EventHandler(this.buscarToolStripMenuItem1_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(109, 64);
+            this.lblTitulo.Location = new System.Drawing.Point(109, 33);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(212, 20);
             this.lblTitulo.TabIndex = 20;
             this.lblTitulo.Text = "Registro de Trabajadores";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(221, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 21;
+            this.txtNombre.Location = new System.Drawing.Point(221, 112);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 21;
             // 
-            // textBox2
+            // txtEdad
             // 
-            this.textBox2.Location = new System.Drawing.Point(221, 156);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 24;
+            this.txtEdad.Location = new System.Drawing.Point(221, 156);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(100, 20);
+            this.txtEdad.TabIndex = 24;
             // 
             // lblNombre
             // 
@@ -110,12 +113,12 @@ namespace LABOR_2
             this.lblNombre.TabIndex = 23;
             this.lblNombre.Text = "Nombre";
             // 
-            // textBox3
+            // txtResidencia
             // 
-            this.textBox3.Location = new System.Drawing.Point(221, 199);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 26;
+            this.txtResidencia.Location = new System.Drawing.Point(221, 199);
+            this.txtResidencia.Name = "txtResidencia";
+            this.txtResidencia.Size = new System.Drawing.Size(100, 20);
+            this.txtResidencia.TabIndex = 26;
             // 
             // lblEdad
             // 
@@ -127,12 +130,12 @@ namespace LABOR_2
             this.lblEdad.TabIndex = 25;
             this.lblEdad.Text = "Edad";
             // 
-            // textBox4
+            // txtCargo
             // 
-            this.textBox4.Location = new System.Drawing.Point(221, 242);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 28;
+            this.txtCargo.Location = new System.Drawing.Point(221, 242);
+            this.txtCargo.Name = "txtCargo";
+            this.txtCargo.Size = new System.Drawing.Size(100, 20);
+            this.txtCargo.TabIndex = 28;
             // 
             // lblResidencia
             // 
@@ -154,12 +157,12 @@ namespace LABOR_2
             this.lblCargo.TabIndex = 29;
             this.lblCargo.Text = "Cargo";
             // 
-            // textBox6
+            // txtHorasTrabajadas
             // 
-            this.textBox6.Location = new System.Drawing.Point(221, 285);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 32;
+            this.txtHorasTrabajadas.Location = new System.Drawing.Point(221, 285);
+            this.txtHorasTrabajadas.Name = "txtHorasTrabajadas";
+            this.txtHorasTrabajadas.Size = new System.Drawing.Size(100, 20);
+            this.txtHorasTrabajadas.TabIndex = 32;
             // 
             // lblHorasTrabajadas
             // 
@@ -182,7 +185,7 @@ namespace LABOR_2
             this.cmbJornada.Name = "cmbJornada";
             this.cmbJornada.Size = new System.Drawing.Size(100, 21);
             this.cmbJornada.TabIndex = 33;
-            this.cmbJornada.Text = "Opcion";
+            this.cmbJornada.Text = "Diurna";
             // 
             // label1
             // 
@@ -202,25 +205,45 @@ namespace LABOR_2
             this.btnIngresar.TabIndex = 36;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            // 
+            // lblCedula
+            // 
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCedula.Location = new System.Drawing.Point(74, 74);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(51, 16);
+            this.lblCedula.TabIndex = 38;
+            this.lblCedula.Text = "Cedula";
+            // 
+            // txtCedula
+            // 
+            this.txtCedula.Location = new System.Drawing.Point(221, 74);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(100, 20);
+            this.txtCedula.TabIndex = 37;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 455);
+            this.Controls.Add(this.lblCedula);
+            this.Controls.Add(this.txtCedula);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbJornada);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtHorasTrabajadas);
             this.Controls.Add(this.lblHorasTrabajadas);
             this.Controls.Add(this.lblCargo);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.lblResidencia);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtResidencia);
             this.Controls.Add(this.lblEdad);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmPrincipal";
@@ -238,19 +261,21 @@ namespace LABOR_2
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem1;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtResidencia;
         private System.Windows.Forms.Label lblEdad;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label lblResidencia;
         private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtHorasTrabajadas;
         private System.Windows.Forms.Label lblHorasTrabajadas;
         private System.Windows.Forms.ComboBox cmbJornada;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIngresar;
+        private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.TextBox txtCedula;
     }
 }
 
