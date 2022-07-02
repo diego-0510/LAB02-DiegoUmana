@@ -48,6 +48,7 @@ namespace LABOR_2
             this.btnIngresar = new System.Windows.Forms.Button();
             this.lblCedula = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
+            this.registrarDueñoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,8 @@ namespace LABOR_2
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscarToolStripMenuItem1});
+            this.buscarToolStripMenuItem1,
+            this.registrarDueñoToolStripMenuItem});
             this.buscarToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.buscarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Transparent;
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
@@ -224,6 +226,13 @@ namespace LABOR_2
             this.txtCedula.Size = new System.Drawing.Size(100, 20);
             this.txtCedula.TabIndex = 37;
             // 
+            // registrarDueñoToolStripMenuItem
+            // 
+            this.registrarDueñoToolStripMenuItem.Name = "registrarDueñoToolStripMenuItem";
+            this.registrarDueñoToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.registrarDueñoToolStripMenuItem.Text = "Registrar Dueño";
+            this.registrarDueñoToolStripMenuItem.Click += new System.EventHandler(this.registrarDueñoToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,6 +285,7 @@ namespace LABOR_2
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Label lblCedula;
         private System.Windows.Forms.TextBox txtCedula;
+        private System.Windows.Forms.ToolStripMenuItem registrarDueñoToolStripMenuItem;
     }
 }
 

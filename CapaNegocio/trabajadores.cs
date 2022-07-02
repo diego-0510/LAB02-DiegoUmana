@@ -7,7 +7,7 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
-    public class proceso
+    public class trabajadores
     { 
         private List<objTrabajadores> listTrabajadores = new List<objTrabajadores>();
 

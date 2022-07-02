@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDueno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDueno.Designer.cs">
+      <DependentUpon>frmDueno.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDueno.resx">
+      <DependentUpon>frmDueno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPago.resx">
       <DependentUpon>frmPago.cs</DependentUpon>
     </EmbeddedResource>

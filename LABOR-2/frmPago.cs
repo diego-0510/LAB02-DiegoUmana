@@ -14,7 +14,7 @@ namespace LABOR_2
     public partial class frmPago : Form
     {
         public int cedulaTrabajador = 0;
-        public proceso lista = frmPrincipal.proceso;
+        public trabajadores lista = frmPrincipal.proceso;
         public dynamic trabajador;
         double pagoHora;
 
@@ -50,7 +50,7 @@ namespace LABOR_2
             txtSalario.Text = pagoSalario.ToString();
         }
 
-        public void mostrarInformacion(proceso mostrar)
+        public void mostrarInformacion(trabajadores mostrar)
         {
             try
             {

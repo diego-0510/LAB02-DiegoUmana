@@ -11,11 +11,10 @@ using CapaNegocio;
 
 namespace LABOR_2
 {
-    public partial class frmPrincipal : Form
+    public partial class frmDueno : Form
     {
-        public static trabajadores proceso = new trabajadores();
-
-        public frmPrincipal()
+        public static dueno nuevoDueno = new dueno();
+        public frmDueno()
         {
             InitializeComponent();
         }
@@ -25,10 +24,7 @@ namespace LABOR_2
             txtCedula.Clear();
             txtNombre.Clear();
             txtEdad.Clear();
-            txtResidencia.Clear();
             txtCargo.Clear();
-            txtHorasTrabajadas.Clear();
-            
         }
 
         public void ingresarInformacion()
@@ -38,11 +34,9 @@ namespace LABOR_2
                 int cedula = int.Parse(txtCedula.Text);
                 string nombre = txtNombre.Text;
                 int edad = int.Parse(txtEdad.Text);
-                string residencia = txtResidencia.Text;
                 string cargo = txtCargo.Text;
-                int horasTrabajadas = int.Parse(txtHorasTrabajadas.Text);
-                string jornada = cmbJornada.Text;
-                proceso.crearTrabajador(cedula,nombre,edad,residencia,cargo,horasTrabajadas,jornada);
+                int acciones = 0;
+                nuevoDueno.crearDueno(cedula, nombre, edad,cargo,acciones);
                 limpiarCampos();
                 MessageBox.Show("Información Ingresada Correctamente", "Ingresada",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -55,22 +49,14 @@ namespace LABOR_2
             }
         }
 
+        private void frmDueno_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             ingresarInformacion();
-        }
-
-        private void buscarToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            frmPago ventanaPagar = new frmPago();
-            ventanaPagar.Visible = true;
-            ventanaPagar.mostrarInformacion(proceso);
-        }
-
-        private void registrarDueñoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDueno ventanaDueno = new frmDueno();
-            ventanaDueno.Visible = true;
         }
     }
 }
