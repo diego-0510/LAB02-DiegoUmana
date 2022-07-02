@@ -13,7 +13,7 @@ namespace LABOR_2
 {
     public partial class frmPrincipal : Form
     {
-        private static proceso proceso = new proceso();
+        public static proceso proceso = new proceso();
 
         public frmPrincipal()
         {
@@ -22,6 +22,7 @@ namespace LABOR_2
 
         private void limpiarCampos()
         {
+            txtCedula.Clear();
             txtNombre.Clear();
             txtEdad.Clear();
             txtResidencia.Clear();
@@ -63,6 +64,7 @@ namespace LABOR_2
         {
             frmPago ventanaPagar = new frmPago();
             ventanaPagar.Visible = true;
+            ventanaPagar.mostrarInformacion(proceso);
         }
     }
 }

@@ -8,13 +8,13 @@ namespace CapaDatos
 {
     public class objTrabajadores
     {
-        private int cedula { get; set; }
-        private string nombre { get; set; }
-        private int edad { get; set; }
-        private string residencia { get; set; }
-        private string cargo { get; set; }
-        private int horasTrabajadas { get; set; }
-        private string jornada { get; set; } 
+        public int cedula { get; set; }
+        public string nombre { get; set; }
+        public int edad { get; set; }
+        public string residencia { get; set; }
+        public string cargo { get; set; }
+        public int horasTrabajadas { get; set; }
+        public string jornada { get; set; } 
 
         public objTrabajadores(int cedula,string nombre,int edad, string residencia,string cargo,int horasTrabajadas,string jornada)
         {
@@ -27,7 +27,7 @@ namespace CapaDatos
             this.jornada = jornada;
         }
 
-        private objTrabajadores()
+        public objTrabajadores()
         {
 
         }
